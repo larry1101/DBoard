@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BGLight"
+    tools:context="com.dou.dboard.FullscreenActivity"
+    android:id="@+id/FBGFL">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <RelativeLayout
+        android:id="@+id/bgbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/FeditText"
+            android:text="@string/inii"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imageButton_ok_2"
+            android:layout_toEndOf="@+id/imageButton_cancel_2" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_ok_2"
+            android:background="@android:drawable/ic_menu_send"
+            android:layout_alignBottom="@+id/FeditText"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton_cancel_2"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_alignBottom="@+id/imageButton_ok_2"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#55787878"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                android:max="200" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

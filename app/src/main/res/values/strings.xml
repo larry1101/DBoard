@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DBoard</string>
+    <string name="inii">Enter</string>
+
+    <string name="title_activity_fullscreen">Board</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
